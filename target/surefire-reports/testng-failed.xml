@@ -5,8 +5,9 @@
     <classes>
       <class name="qa.orangehrm.LoginTest">
         <methods>
-          <include name="pruebauno"/>
           <include name="setUp"/>
+          <include name="PruebaLoginOrangeERM"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- qa.orangehrm.LoginTest -->
     </classes>

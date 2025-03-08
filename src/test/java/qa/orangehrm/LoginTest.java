@@ -1,36 +1,47 @@
 package qa.orangehrm;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
+import qa.orangehrm.Pages.PageLogin;
 
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+//importo la libreria de ZevTools
 import qa.orangehrm.ZevtTools.ZevTools;
 
 public class LoginTest {
 
     private WebDriver driver;
     private ZevTools zevTools = new ZevTools();
+    
+
+  
 
     @BeforeMethod
     public void setUp() {
-
-        System.setProperty("webdriver.chrome.driver", "resources/chromedriver_V134/chromedriver.exe");
-        driver = new ChromeDriver();
-        driver.manage().window().maximize();
+        driver = zevTools.setupDriver();
         driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-        zevTools.sleepSeconds(8);
-
+        zevTools.sleepSeconds(3);
     }
 
     @Test
-    public void pruebauno() {
-        zevTools.screenshot(driver);
-        System.out.println("Soy una pruueba");
-        zevTools.sleepSeconds(3);
-        driver.quit();
+    public void PruebaLoginOrangeERM() {
+        try {
+            PageLogin login = new PageLogin(driver);
+            login.loginUser("Admin", "admin123");
+            zevTools.screenshot(driver);
+        } catch (Exception e) {
+            // TODO: handle exception
+            zevTools.zevLogs(e.getMessage(), "ERROR");
+            e.printStackTrace();
+        }
+    }
 
+    @AfterMethod 
+    public void tearDown() {
+        driver.quit();
     }
 }
+

@@ -46,4 +46,12 @@
 
 
   </dependencies>
+  <profiles>
+    <profile>
+      <id>headless</id>
+      <properties>
+        <selenium.headless>true</selenium.headless>
+      </properties>
+    </profile>
+  </profiles>
 </project>

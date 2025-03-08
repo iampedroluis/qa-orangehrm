@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-08T19:41:10 ART" name="Surefire suite" finished-at="2025-03-08T19:41:23 ART" duration-ms="13819">
+    <groups>
+    </groups>
+    <test started-at="2025-03-08T19:41:10 ART" name="Surefire test" finished-at="2025-03-08T19:41:23 ART" duration-ms="13819">
+      <class name="qa.orangehrm.LoginTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:qa.orangehrm.LoginTest@1d119efb]" started-at="2025-03-08T19:41:10 ART" name="setUp" finished-at="2025-03-08T19:41:16 ART" duration-ms="6845" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="PruebaLoginOrangeERM()[pri:0, instance:qa.orangehrm.LoginTest@1d119efb]" started-at="2025-03-08T19:41:16 ART" name="PruebaLoginOrangeERM" finished-at="2025-03-08T19:41:23 ART" duration-ms="6680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PruebaLoginOrangeERM -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:qa.orangehrm.LoginTest@1d119efb]" started-at="2025-03-08T19:41:23 ART" name="tearDown" finished-at="2025-03-08T19:41:23 ART" duration-ms="250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- qa.orangehrm.LoginTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
