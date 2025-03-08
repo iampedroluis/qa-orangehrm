@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-08T16:36:55 ART" name="Surefire suite" finished-at="2025-03-08T16:37:15 ART" duration-ms="20377">
+  <suite started-at="2025-03-08T16:51:54 ART" name="Surefire suite" finished-at="2025-03-08T16:52:09 ART" duration-ms="15707">
     <groups>
     </groups>
-    <test started-at="2025-03-08T16:36:55 ART" name="Surefire test" finished-at="2025-03-08T16:37:15 ART" duration-ms="20377">
+    <test started-at="2025-03-08T16:51:54 ART" name="Surefire test" finished-at="2025-03-08T16:52:09 ART" duration-ms="15707">
       <class name="qa.orangehrm.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:qa.orangehrm.LoginTest@10e92f8f]" started-at="2025-03-08T16:36:55 ART" name="setUp" finished-at="2025-03-08T16:37:07 ART" duration-ms="12177" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:qa.orangehrm.LoginTest@10e92f8f]" started-at="2025-03-08T16:51:54 ART" name="setUp" finished-at="2025-03-08T16:52:06 ART" duration-ms="12094" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="pruebauno()[pri:0, instance:qa.orangehrm.LoginTest@10e92f8f]" started-at="2025-03-08T16:37:07 ART" name="pruebauno" finished-at="2025-03-08T16:37:15 ART" duration-ms="8154" status="PASS">
+        <test-method signature="pruebauno()[pri:0, instance:qa.orangehrm.LoginTest@10e92f8f]" started-at="2025-03-08T16:52:06 ART" name="pruebauno" finished-at="2025-03-08T16:52:09 ART" duration-ms="3555" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- pruebauno -->

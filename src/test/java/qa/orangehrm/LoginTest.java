@@ -27,7 +27,7 @@ public class LoginTest {
 
     @Test
     public void pruebauno() {
-        
+        zevTools.screenshot(driver);
         System.out.println("Soy una pruueba");
         zevTools.sleepSeconds(3);
         driver.quit();
