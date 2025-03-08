@@ -1,0 +1,4 @@
+/reports/screenshots/*.png
+
+!/reports/
+!/reports/screenshots/
