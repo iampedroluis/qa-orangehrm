@@ -90,4 +90,9 @@ public class ZevTools {
         return driver;
 
     }
+    
+    public void closeDriver(WebDriver driver) 
+    {
+        driver.quit();
+    }
 }
