@@ -16,39 +16,33 @@ public class PageDashBoard {
 
     private WebDriver driver;
     private WebDriverWait wait;
-    private ZevTools zevtools = new ZevTools();
+    private ZevTools zevtools;
     private By dashboardTitle = By.xpath("//h6[text()='Dashboard']");
     private By adminItemNav_xpath = By.xpath("//span[normalize-space()='Admin']");
 
     public PageDashBoard(WebDriver driver) {
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
+        this.zevtools = new ZevTools(driver);
     }
 
     public boolean isDashboardDisplayed() {
-        return isElementVisible(dashboardTitle, 15);
+        return zevtools.isElementVisible(dashboardTitle, 15);
     }
 
-    private boolean isElementVisible(By locator, int timeOut) {
+
+
+    public void clickItemMenuAdmin() {
         try {
-            WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-            return element.isDisplayed();
+            zevtools.waitForElement(adminItemNav_xpath, 10);
+            driver.findElement(adminItemNav_xpath).click();
+            zevtools.sleepSeconds(1);
+            zevtools.zevLogs("Admin item clicked", "INFO");
+            zevtools.screenshot(driver);
         } catch (Exception e) {
             // TODO: handle exception
             zevtools.zevLogs("Error: " + e.getMessage(), "ERROR");
             e.printStackTrace();
-            return false;
-        }
-
-    }
-
-    public void clickItemMenuAdmin() {
-        try {
-            zevtools.sleepSeconds(15);
-            driver.findElement(adminItemNav_xpath).click();
-            zevtools.sleepSeconds(15);
-        } catch (Exception e) {
-            // TODO: handle exception
         }
     }
 }

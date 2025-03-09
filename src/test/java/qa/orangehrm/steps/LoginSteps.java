@@ -18,15 +18,17 @@ public class LoginSteps {
     private WebDriver driver;
     private PageLogin pageLogin;
     private PageDashBoard dashboard;
-    private ZevTools zevTools = new ZevTools();
+    private ZevTools zevTools;
 
     @Given("The user navigates to the login page")
     public void openLoginPage() {
         // Open the login page
+        // Inicializa el driver correctamente
+        zevTools = new ZevTools(driver);
         driver = zevTools.setupDriver();
         pageLogin = new PageLogin(driver);
         dashboard = new PageDashBoard(driver);
-        driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+        pageLogin.loginUrl();
         zevTools.sleepSeconds(3);
         zevTools.zevLogs("levante la url", "INFO");
         zevTools.screenshot(driver);
@@ -54,15 +56,15 @@ public class LoginSteps {
     @Then("The user should be redirected to the dashboard page")
     public void verifyRedirectToDashboard() {
         // Verify that the user is redirected to the dashboard page
-
+        if (driver == null) {
+            throw new IllegalStateException("Error: WebDriver no ha sido inicializado.");
+        }
         zevTools.zevLogs("Verifico si estoy en la dashboard", "INFO");
-        zevTools.sleepSeconds(5);
+        zevTools.sleepSeconds(1);
         zevTools.screenshot(driver);
-        zevTools.sleepSeconds(3);
         zevTools.zevLogs("La prueba de login ha pasado correctamente", "INFO");
-
-        // Assert that the dashboard is displayed
-        Assert.assertTrue("Dashboard not Displayed", dashboard.isDashboardDisplayed());
+        zevTools.sleepSeconds(3);
+        Assert.assertTrue("Dashboard Displayed", dashboard.isDashboardDisplayed());
         zevTools.closeDriver(driver);
     }
 }
