@@ -40,4 +40,12 @@ public class PageLogin {
         }
     }
 
+    public void loginLikeAdmin() {
+        
+        driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+        zevtools.zevLogs("Levantando: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login", "INFO");
+        zevtools.sleepSeconds(10);
+        enterCredentials("Admin", "admin123");
+        clickLoginButton();
+    }
 }

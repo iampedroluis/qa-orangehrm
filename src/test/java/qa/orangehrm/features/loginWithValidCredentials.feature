@@ -1,3 +1,4 @@
+@LoginUser
 Feature: Login functionality
 
   Scenario: Successful login with valid credentials
