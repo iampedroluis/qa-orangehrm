@@ -1,4 +1,4 @@
 /reports/screenshots/*.png
-
+/test/reports
 !/reports/
 !/reports/screenshots/

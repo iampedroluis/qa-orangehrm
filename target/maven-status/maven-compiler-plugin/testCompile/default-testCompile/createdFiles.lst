@@ -1,1 +1,8 @@
+qa\orangehrm\Pages\PageAdmin.class
+qa\orangehrm\Pages\PageLogin.class
 qa\orangehrm\AppTest.class
+qa\orangehrm\steps\addUserSteps.class
+qa\orangehrm\ZevtTools\ZevTools.class
+qa\orangehrm\Pages\PageDashBoard.class
+qa\orangehrm\runner\TestRunner.class
+qa\orangehrm\steps\LoginSteps.class
