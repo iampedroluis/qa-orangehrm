@@ -1,4 +1,4 @@
-@AddUser
+@AddUser @AllTests
 Feature: Add a new user in the Admin panel
 
   Scenario: Successfully add a new user with ESS role and enabled status

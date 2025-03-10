@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,6 +104,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="qa.orangehrm.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Successfully add a new user with ESS role and enabled status&quot;, &quot;Add a new user in the Admin panel&quot;)">runScenario("Successfully add a new user with ESS role and enabled status", "Add a new user in the Admin panel")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="qa.orangehrm.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Successful login with valid credentials&quot;, &quot;Login functionality&quot;)">runScenario("Successful login with valid credentials", "Login functionality")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -130,6 +135,16 @@
                   </a> <!-- runScenario("Successfully add a new user with ESS role and enabled status", "Add a new user in the Admin panel") -->
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Successfully add a new user with ESS role and enabled status","Add a new user in the Admin panel")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Successful login with valid credentials&quot;, &quot;Login functionality&quot;)">
+                  </a> <!-- runScenario("Successful login with valid credentials", "Login functionality") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Successful login with valid credentials","Login functionality")</span>
                   <em>
 (Runs Cucumber Scenarios)                  </em>
                 </div> <!-- method-content -->
@@ -195,16 +210,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
 data.setCell(0, 2, 'qa.orangehrm.runner.TestRunner')
-data.setCell(0, 3, 19031);
+data.setCell(0, 3, 18554);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'qa.orangehrm.runner.TestRunner')
+data.setCell(1, 3, 16353);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 seconds</span>
+              <span class="suite-total-time">Total running time: 34 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -232,16 +251,20 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">qa.orangehrm.runner.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@2a9bc08f)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@33364212)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">runScenario("Successfully add a new user with ESS role and enabled status", "Add a new user in the Admin panel")</span>
-                <span class="method-start">303 ms</span>
+                <span class="method-start">416 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Successful login with valid credentials", "Login functionality")</span>
+                <span class="method-start">18972 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">19334 ms</span>
+                <span class="method-start">35331 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
