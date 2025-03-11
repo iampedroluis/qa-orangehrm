@@ -5,9 +5,9 @@ Feature: Add a new user in the Admin panel
     Given The user is logged in as an Admin and on the Dashboard page
     When The user clicks on the Admin option in the search panel
     Then The user should be redirected to the User Management layout
-    # When The user clicks on the "+ Add" button
-    # Then The user should be redirected to the "Add User" layout
-    # When The user selects "ESS" from the "User Role" dropdown
+    When The user clicks on the Add button
+    Then The user should be redirected to the Add User layout
+    When The user selects ESS from the User Role dropdown
     # And The user selects "James Butler" from the "Employee Name" dropdown
     # And The user selects "Enabled" from the "Status" dropdown
     # And The user enters "Uzerv-test" as the "Username"

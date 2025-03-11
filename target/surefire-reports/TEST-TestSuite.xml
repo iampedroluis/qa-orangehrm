@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="36.297" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="23.027" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="webdriver.chrome.driver" value="resources/chromedriver_V134/chromedriver.exe"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="AR"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-23\bin"/>
-    <property name="sun.java.command" value="C:\Users\zevet\AppData\Local\Temp\surefire3800790320876109192\surefirebooter-20250310135110356_3.jar C:\Users\zevet\AppData\Local\Temp\surefire3800790320876109192 2025-03-10T13-51-10_165-jvmRun1 surefire-20250310135110356_1tmp surefire_0-20250310135110356_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\zevet\AppData\Local\Temp\surefire5673802831999945663\surefirebooter-20250310221106271_3.jar C:\Users\zevet\AppData\Local\Temp\surefire5673802831999945663 2025-03-10T22-11-06_071-jvmRun1 surefire-20250310221106271_1tmp surefire_0-20250310221106271_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\zevet\OneDrive\Escritorio\QA-ORANGE_HRM\qaorangehrm\target\test-classes;C:\Users\zevet\OneDrive\Escritorio\QA-ORANGE_HRM\qaorangehrm\target\classes;C:\Users\zevet\.m2\repository\org\seleniumhq\selenium\selenium-java\4.29.0\selenium-java-4.29.0.jar;C:\Users\zevet\.m2\repository\org\seleniumhq\selenium\selenium-api\4.29.0\selenium-api-4.29.0.jar;C:\Users\zevet\.m2\repository\org\jspecify\jspecify\1.0.0\jspecify-1.0.0.jar;C:\Users\zevet\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.29.0\selenium-chrome-driver-4.29.0.jar;C:\Users\zevet\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\zevet\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.29.0\selenium-chromium-driver-4.29.0.jar;C:\Users\zevet\.m2\repository\org\seleniumhq\selenium\selenium-json\4.29.0\selenium-json-4.29.0.jar;C:\Users\zevet\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.29.0\selenium-manager-4.29.0.jar;C:\Users\zevet\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v131\4.29.0\selenium-devtools-v131-4.29.0.jar;C:\Users\zevet\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v132\4.29.0\selenium-devtools-v132-4.29.0.jar;C:\Users\zevet\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v133\4.29.0\selenium-devtools-v133-4.29.0.jar;C:\Users\zevet\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.29.0\selenium-devtools-v85-4.29.0.jar;C:\Users\zevet\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.29.0\selenium-edge-driver-4.29.0.jar;C:\Users\zevet\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.29.0\selenium-firefox-driver-4.29.0.jar;C:\Users\zevet\.m2\repository\org\seleniumhq\selenium\selenium-http\4.29.0\selenium-http-4.29.0.jar;C:\Users\zevet\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.29.0\selenium-ie-driver-4.29.0.jar;C:\Users\zevet\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.29.0\selenium-remote-driver-4.29.0.jar;C:\Users\zevet\.m2\repository\com\google\guava\guava\33.4.0-jre\guava-33.4.0-jre.jar;C:\Users\zevet\.m2\repository\com\google\guava\failureaccess\1.0.2\failureaccess-1.0.2.jar;C:\Users\zevet\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\zevet\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\zevet\.m2\repository\org\checkerframework\checker-qual\3.43.0\checker-qual-3.43.0.jar;C:\Users\zevet\.m2\repository\com\google\errorprone\error_prone_annotations\2.36.0\error_prone_annotations-2.36.0.jar;C:\Users\zevet\.m2\repository\com\google\j2objc\j2objc-annotations\3.0.0\j2objc-annotations-3.0.0.jar;C:\Users\zevet\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\zevet\.m2\repository\io\opentelemetry\opentelemetry-api\1.46.0\opentelemetry-api-1.46.0.jar;C:\Users\zevet\.m2\repository\io\opentelemetry\opentelemetry-context\1.46.0\opentelemetry-context-1.46.0.jar;C:\Users\zevet\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.46.0\opentelemetry-exporter-logging-1.46.0.jar;C:\Users\zevet\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.46.0\opentelemetry-sdk-common-1.46.0.jar;C:\Users\zevet\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.46.0\opentelemetry-sdk-extension-autoconfigure-spi-1.46.0.jar;C:\Users\zevet\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.46.0\opentelemetry-sdk-extension-autoconfigure-1.46.0.jar;C:\Users\zevet\.m2\repository\io\opentelemetry\opentelemetry-api-incubator\1.46.0-alpha\opentelemetry-api-incubator-1.46.0-alpha.jar;C:\Users\zevet\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.46.0\opentelemetry-sdk-trace-1.46.0.jar;C:\Users\zevet\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.46.0\opentelemetry-sdk-1.46.0.jar;C:\Users\zevet\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.46.0\opentelemetry-sdk-metrics-1.46.0.jar;C:\Users\zevet\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.46.0\opentelemetry-sdk-logs-1.46.0.jar;C:\Users\zevet\.m2\repository\net\bytebuddy\byte-buddy\1.15.11\byte-buddy-1.15.11.jar;C:\Users\zevet\.m2\repository\org\seleniumhq\selenium\selenium-os\4.29.0\selenium-os-4.29.0.jar;C:\Users\zevet\.m2\repository\org\apache\commons\commons-exec\1.4.0\commons-exec-1.4.0.jar;C:\Users\zevet\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.29.0\selenium-safari-driver-4.29.0.jar;C:\Users\zevet\.m2\repository\org\seleniumhq\selenium\selenium-support\4.29.0\selenium-support-4.29.0.jar;C:\Users\zevet\.m2\repository\org\testng\testng\7.11.0\testng-7.11.0.jar;C:\Users\zevet\.m2\repository\org\slf4j\slf4j-api\2.0.16\slf4j-api-2.0.16.jar;C:\Users\zevet\.m2\repository\org\jcommander\jcommander\1.83\jcommander-1.83.jar;C:\Users\zevet\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\zevet\.m2\repository\org\apache\maven\plugin-tools\maven-plugin-annotations\4.0.0-beta-1\maven-plugin-annotations-4.0.0-beta-1.jar;C:\Users\zevet\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\zevet\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\zevet\.m2\repository\commons-io\commons-io\2.18.0\commons-io-2.18.0.jar;C:\Users\zevet\.m2\repository\io\cucumber\cucumber-java\7.21.1\cucumber-java-7.21.1.jar;C:\Users\zevet\.m2\repository\io\cucumber\cucumber-core\7.21.1\cucumber-core-7.21.1.jar;C:\Users\zevet\.m2\repository\io\cucumber\cucumber-gherkin\7.21.1\cucumber-gherkin-7.21.1.jar;C:\Users\zevet\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.21.1\cucumber-gherkin-messages-7.21.1.jar;C:\Users\zevet\.m2\repository\io\cucumber\gherkin\31.0.0\gherkin-31.0.0.jar;C:\Users\zevet\.m2\repository\io\cucumber\messages\27.2.0\messages-27.2.0.jar;C:\Users\zevet\.m2\repository\io\cucumber\testng-xml-formatter\0.3.1\testng-xml-formatter-0.3.1.jar;C:\Users\zevet\.m2\repository\io\cucumber\query\13.2.0\query-13.2.0.jar;C:\Users\zevet\.m2\repository\io\cucumber\tag-expressions\6.1.2\tag-expressions-6.1.2.jar;C:\Users\zevet\.m2\repository\io\cucumber\cucumber-expressions\18.0.1\cucumber-expressions-18.0.1.jar;C:\Users\zevet\.m2\repository\io\cucumber\datatable\7.21.1\datatable-7.21.1.jar;C:\Users\zevet\.m2\repository\io\cucumber\cucumber-plugin\7.21.1\cucumber-plugin-7.21.1.jar;C:\Users\zevet\.m2\repository\io\cucumber\docstring\7.21.1\docstring-7.21.1.jar;C:\Users\zevet\.m2\repository\io\cucumber\html-formatter\21.9.0\html-formatter-21.9.0.jar;C:\Users\zevet\.m2\repository\io\cucumber\junit-xml-formatter\0.7.1\junit-xml-formatter-0.7.1.jar;C:\Users\zevet\.m2\repository\io\cucumber\ci-environment\10.0.1\ci-environment-10.0.1.jar;C:\Users\zevet\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\zevet\.m2\repository\io\cucumber\cucumber-testng\7.21.1\cucumber-testng-7.21.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\zevet\AppData\Local\Temp\surefire3800790320876109192\surefirebooter-20250310135110356_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\zevet\AppData\Local\Temp\surefire5673802831999945663\surefirebooter-20250310221106271_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="23.0.2+7-58"/>
@@ -46,7 +46,7 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\zevet\AppData\Local\Temp\"/>
     <property name="java.version" value="23.0.2"/>
-    <property name="cucumber.filter.tags" value="@AllTests"/>
+    <property name="cucumber.filter.tags" value="@AddUser"/>
     <property name="user.dir" value="C:\Users\zevet\OneDrive\Escritorio\QA-ORANGE_HRM\qaorangehrm"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
@@ -60,53 +60,37 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="runScenario[&quot;Successfully add a new user with ESS role and enabled status&quot;, &quot;Add a new user in the Admin panel&quot;](1)" classname="qa.orangehrm.runner.TestRunner" time="18.556">
+  <testcase name="runScenario[&quot;Successfully add a new user with ESS role and enabled status&quot;, &quot;Add a new user in the Admin panel&quot;](1)" classname="qa.orangehrm.runner.TestRunner" time="21.208">
     <system-out><![CDATA[
 @AddUser @AllTests
 Scenario: Successfully add a new user with ESS role and enabled status &amp#27;[90m# src/test/java/qa/orangehrm/features/adduserInAdminLayout.feature:4&amp#27;[0m
-[2025-03-10 13:51:11.758][INFO] -->Ejecutando con ventana maximizada
-[2025-03-10 13:51:15.619][INFO] -->Levantando: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-[2025-03-10 13:51:17.995][ OK] -->ScreenShot: reports/screenshots/SCREENSHOT 10-mar-2025 135117_983 .png
-[2025-03-10 13:51:24.173][INFO] -->levante la url
-[2025-03-10 13:51:24.344][ OK] -->ScreenShot: reports/screenshots/SCREENSHOT 10-mar-2025 135124_338 .png
+[2025-03-10 22:11:07.597][INFO] -->Ejecutando con ventana maximizada
+[2025-03-10 22:11:11.413][INFO] -->Levantando: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+[2025-03-10 22:11:13.803][ OK] -->ScreenShot: reports/screenshots/SCREENSHOT 10-mar-2025 221113_792 .png
+[2025-03-10 22:11:18.923][INFO] -->levante la url
+[2025-03-10 22:11:19.080][ OK] -->ScreenShot: reports/screenshots/SCREENSHOT 10-mar-2025 221119_076 .png
   &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mThe user is logged in as an Admin and on the Dashboard page&amp#27;[0m    &amp#27;[90m# qa.orangehrm.steps.addUserSteps.the_user_is_logged_in_as_admin()&amp#27;[0m
-[2025-03-10 13:51:26.211][INFO] -->Admin item clicked
-[2025-03-10 13:51:26.442][ OK] -->ScreenShot: reports/screenshots/SCREENSHOT 10-mar-2025 135126_410 .png
-[2025-03-10 13:51:27.454][INFO] -->clickea en admin
-[2025-03-10 13:51:27.713][ OK] -->ScreenShot: reports/screenshots/SCREENSHOT 10-mar-2025 135127_702 .png
+[2025-03-10 22:11:20.803][INFO] -->Admin item clicked
+[2025-03-10 22:11:20.976][ OK] -->ScreenShot: reports/screenshots/SCREENSHOT 10-mar-2025 221120_968 .png
+[2025-03-10 22:11:21.991][INFO] -->clickea en admin
+[2025-03-10 22:11:22.153][ OK] -->ScreenShot: reports/screenshots/SCREENSHOT 10-mar-2025 221122_144 .png
   &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mThe user clicks on the Admin option in the search panel&amp#27;[0m         &amp#27;[90m# qa.orangehrm.steps.addUserSteps.the_user_clicks_on_the_admin_option_in_the_search_panel()&amp#27;[0m
-[2025-03-10 13:51:27.719][INFO] -->Verifico si estoy en la gestion de usuarios
-[2025-03-10 13:51:29.921][ OK] -->ScreenShot: reports/screenshots/SCREENSHOT 10-mar-2025 135129_918 .png
+[2025-03-10 22:11:22.155][INFO] -->Verifico si estoy en la gestion de usuarios
+[2025-03-10 22:11:24.354][ OK] -->ScreenShot: reports/screenshots/SCREENSHOT 10-mar-2025 221124_350 .png
   &amp#27;[32mThen &amp#27;[0m&amp#27;[32mThe user should be redirected to the User Management layout&amp#27;[0m     &amp#27;[90m# qa.orangehrm.steps.addUserSteps.verifyRedirectToUserManagement()&amp#27;[0m
+[2025-03-10 22:11:24.355][INFO] -->clickea en agregar
+[2025-03-10 22:11:24.511][ OK] -->ScreenShot: reports/screenshots/SCREENSHOT 10-mar-2025 221124_503 .png
+[2025-03-10 22:11:26.076][INFO] -->Add button clicked
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mThe user clicks on the Add button&amp#27;[0m                               &amp#27;[90m# qa.orangehrm.steps.addUserSteps.the_user_clicks_on_the_add_button()&amp#27;[0m
+[2025-03-10 22:11:26.077][INFO] -->Verifico si estoy en la vista de agregar usuario
+[2025-03-10 22:11:28.282][ OK] -->ScreenShot: reports/screenshots/SCREENSHOT 10-mar-2025 221128_278 .png
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mThe user should be redirected to the Add User layout&amp#27;[0m            &amp#27;[90m# qa.orangehrm.steps.addUserSteps.verifyRedirectToAddUser()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mThe user selects ESS from the User Role dropdown&amp#27;[0m                &amp#27;[90m# qa.orangehrm.steps.addUserSteps.the_user_selects_ess_from_the_user_role_dropdown()&amp#27;[0m
 ]]></system-out>
     <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
 SLF4J(W): Defaulting to no-operation (NOP) logger implementation
 SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
-mar 10, 2025 1:51:13 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 134, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 134
-]]></system-err>
-  </testcase>
-  <testcase name="runScenario[&quot;Successful login with valid credentials&quot;, &quot;Login functionality&quot;](2)" classname="qa.orangehrm.runner.TestRunner" time="16.35">
-    <system-out><![CDATA[
-@LoginUser @AllTests
-Scenario: Successful login with valid credentials          &amp#27;[90m# src/test/java/qa/orangehrm/features/loginWithValidCredentials.feature:4&amp#27;[0m
-[2025-03-10 13:51:30.218][INFO] -->Ejecutando con ventana maximizada
-[2025-03-10 13:51:33.221][INFO] -->Levantando: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
-[2025-03-10 13:51:37.239][INFO] -->levante la url
-[2025-03-10 13:51:37.379][ OK] -->ScreenShot: reports/screenshots/SCREENSHOT 10-mar-2025 135137_375 .png
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mThe user navigates to the login page&amp#27;[0m               &amp#27;[90m# qa.orangehrm.steps.LoginSteps.openLoginPage()&amp#27;[0m
-username: Admin password: admin123
-[2025-03-10 13:51:38.781][ OK] -->ScreenShot: reports/screenshots/SCREENSHOT 10-mar-2025 135138_775 .png
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mThe user enters a valid username and password&amp#27;[0m       &amp#27;[90m# qa.orangehrm.steps.LoginSteps.enterCredentials(io.cucumber.datatable.DataTable)&amp#27;[0m
-    | username | password |
-    | Admin    | admin123 |
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mThe user clicks on the login button&amp#27;[0m                  &amp#27;[90m# qa.orangehrm.steps.LoginSteps.clickLoginButton()&amp#27;[0m
-[2025-03-10 13:51:41.914][INFO] -->Verifico si estoy en la dashboard
-[2025-03-10 13:51:43.086][ OK] -->ScreenShot: reports/screenshots/SCREENSHOT 10-mar-2025 135143_081 .png
-[2025-03-10 13:51:43.086][INFO] -->La prueba de login ha pasado correctamente
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mThe user should be redirected to the dashboard page&amp#27;[0m &amp#27;[90m# qa.orangehrm.steps.LoginSteps.verifyRedirectToDashboard()&amp#27;[0m
-]]></system-out>
-    <system-err><![CDATA[mar 10, 2025 1:51:31 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+mar 10, 2025 10:11:09 P. M. org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 134, returning the closest version; found: 133; Please update to a Selenium version that supports CDP version 134
 ]]></system-err>
   </testcase>
