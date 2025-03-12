@@ -14,6 +14,8 @@ import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
 
+import org.junit.Assert;
+
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -24,6 +26,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import static org.junit.Assert.assertEquals;
+
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 
 public class ZevTools {
 
@@ -75,7 +82,7 @@ public class ZevTools {
     }
 
     public WebDriver setupDriver() {
-        if(this.driver == null){
+        if (this.driver == null) {
             try {
                 System.setProperty("webdriver.chrome.driver", "resources/chromedriver_V134/chromedriver.exe");
                 // Obtener el valor de la variable de sistema -Dheadless (true o false)
@@ -91,17 +98,17 @@ public class ZevTools {
                     options.addArguments("--start-maximized"); // Maximiza la ventana
                     zevLogs("Ejecutando con ventana maximizada", "INFO");
                 }
-    
+
                 driver = new ChromeDriver(options);
                 this.wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // Se inicializa el wait
-    
+
             } catch (Exception e) {
                 // TODO: handle exception
                 zevLogs("Error en setupDriver: " + e.getMessage(), "ERROR");
                 e.printStackTrace();
             }
         }
-        
+
         return this.driver;
 
     }
@@ -135,4 +142,40 @@ public class ZevTools {
 
     }
 
-}
+    public void driverSendKeys(String text) {
+        try {
+            Robot robot = new Robot();
+            for (char c : text.toCharArray()) {
+                int keyCode = KeyEvent.getExtendedKeyCodeForChar(c);
+                if (KeyEvent.CHAR_UNDEFINED == keyCode) {
+                    throw new RuntimeException("No se puede escribir el carácter: " + c);
+                }
+                robot.keyPress(keyCode);
+                robot.keyRelease(keyCode);
+                Thread.sleep(50); // Pequeña pausa entre caracteres
+                // Presionar ENTER al final
+                robot.keyPress(KeyEvent.VK_ENTER);
+                robot.keyRelease(KeyEvent.VK_ENTER);
+            }
+        } catch (Exception e) {
+            // TODO: handle exception
+            e.printStackTrace();
+            zevLogs("Error" + e.getMessage(), "ERROR");
+        }
+    }
+
+    public void zevAssertion(String expectedResult, By locator) {
+        WebElement element = driver.findElement(locator);
+        String actualResult = element.getText();
+    
+        // Comparar el texto obtenido con el texto esperado
+        try {
+            Assert.assertEquals("El texto no coincide", expectedResult, actualResult);
+            zevLogs("Assertion: " + "Resultado Esperado: " + expectedResult + " Resultado Obtenido: " + actualResult, "OK");
+        } catch (AssertionError e) {
+            zevLogs("Assertion: " + "Resultado Esperado: " + expectedResult + "Resultado Obtenido: " + actualResult, "ERROR");
+            screenshot(driver);
+            throw e;  // Rethrow the exception so the test can fail
+        }
+    }
+}   
