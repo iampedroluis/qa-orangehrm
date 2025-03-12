@@ -18,6 +18,7 @@ public class PageAdmin {
     }
 
     public boolean isDashboardDisplayed() {
+        
         return zevtools.isElementVisible(adminlayoutTitle, 15);
     }
 

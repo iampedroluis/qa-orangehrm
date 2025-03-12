@@ -3,6 +3,7 @@ package qa.orangehrm.steps;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -72,16 +73,39 @@ public class addUserSteps {
         pageAddUser = new PageAddUser(driver);
         zevTools.zevLogs("Verifico si estoy en la vista de agregar usuario", "INFO");
         zevTools.sleepSeconds(1);
-        Assert.assertTrue("Add User Layout Displayed", pageAddUser.AddUserLayoutDisplayed());
+        Assert.assertTrue("Add User Layout Displayed", pageAddUser.AddUserLayoutDisplayed("Add User"));
         zevTools.sleepSeconds(1);
         zevTools.screenshot(driver);
 
     }
 
-    @When("The user selects ESS from the User Role dropdown")
-    public void the_user_selects_ess_from_the_user_role_dropdown() {
+    @When("The user selects {string} from the User Role dropdown")
+    public void the_user_selects_ess_from_the_user_role_dropdown(String userRole) {
+        pageAddUser.selectUserRole(userRole);
+        zevTools.zevLogs("Seleccionando rol de usuario: " + userRole, "INFO");
+        zevTools.sleepSeconds(1);
+       
+
+        
+    }
+    @And("The user selects {string} from the Employee Name dropdown")
+    public void the_user_selects_john_doe_from_the_employee_name_dropdown(String employeeName) {
+        // Select employee name from dropdown
+        zevTools.zevLogs("Seleccionando nombre de empleado: " + employeeName, "INFO");
+        zevTools.sleepSeconds(1);
+        pageAddUser.selectEmployeeName(employeeName);
+        zevTools.screenshot(driver);
+
+    }
+    @And("The user selects {string} from the Status dropdown")
+    public void the_user_selects_from_the_status_dropdown(String status) {
+        zevTools.zevLogs(("Selecciona User status"), "INFO");
+        zevTools.sleepSeconds(1);
+        pageAddUser.selectStatus(status);
+        zevTools.screenshot(driver);
         zevTools.zevLogs("Cerrando Driver", "INFO");
         zevTools.sleepSeconds(3);
         zevTools.closeDriver(driver);
+
     }
 }

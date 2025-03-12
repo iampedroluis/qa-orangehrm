@@ -7,9 +7,9 @@ Feature: Add a new user in the Admin panel
     Then The user should be redirected to the User Management layout
     When The user clicks on the Add button
     Then The user should be redirected to the Add User layout
-    When The user selects ESS from the User Role dropdown
-    # And The user selects "James Butler" from the "Employee Name" dropdown
-    # And The user selects "Enabled" from the "Status" dropdown
+    When The user selects "ESS" from the User Role dropdown
+    And The user selects "James Butler" from the Employee Name dropdown
+    And The user selects "Enabled" from the Status dropdown
     # And The user enters "Uzerv-test" as the "Username"
     # And The user enters "user123" as the "Password"
     # And The user enters "user123" as the "Confirm Password"
