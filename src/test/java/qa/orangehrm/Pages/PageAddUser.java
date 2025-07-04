@@ -12,16 +12,23 @@ import qa.orangehrm.ZevtTools.ZevTools;
 public class PageAddUser {
     private WebDriver driver;
     private ZevTools zevtools;
+
+    // XPATHS 
+
     private By AddUserLayoutTitle_xpath = By.xpath("//h6[normalize-space()='Add User']");
     private By userRoleDropdown_xpath = By.xpath(
             "//div[@class='oxd-grid-2 orangehrm-full-width-grid']//div[1]//div[1]//div[2]//div[1]//div[1]//div[2]//i[1]");
     private By inputEmployeeName_xpath = By.xpath("//input[@placeholder='Type for hints...']");
     private By statusDropdowns_xpath = By.xpath("//div[3]//div[1]//div[2]//div[1]//div[1]//div[2]//i[1]");
+    private By userNameInput_xpath = By.xpath("//label[text()='Username']/following::input[1]");
+    private By passwordInput_xpath = By.xpath("//label[text()='Password']/following::input[1]");
+    private By confirmPasswordInput_xpath = By.xpath("//label[text()='Confirm Password']/following::input[1]");
     
 
     public PageAddUser(WebDriver driver) {
         this.driver = driver;
-        this.zevtools = new ZevTools(driver); // Inicializa ZevTools después de asignar el driver
+        this.zevtools = new ZevTools(driver); 
+        // Inicializa ZevTools después de asignar el driver
     }
 
     public boolean AddUserLayoutDisplayed(String text) {
@@ -83,5 +90,28 @@ public class PageAddUser {
         String actualText = selectedElement.getText().trim();
         Assert.assertEquals(actualText, status );
         
+    }
+
+    public void enterUserName(String userName) {
+        WebElement userNameInput = zevtools.waitForElement(userNameInput_xpath, 15);
+        userNameInput.click();
+        zevtools.sleepSeconds(1);
+        userNameInput.sendKeys(userName);
+        zevtools.sleepSeconds(1);
+    }
+
+    public void enterPassword(String password) {
+        WebElement passwordInput = zevtools.waitForElement(passwordInput_xpath, 15);
+        passwordInput.click();
+        zevtools.sleepSeconds(1);
+        passwordInput.sendKeys(password);
+        zevtools.sleepSeconds(1);
+    }
+    public void enterConfirmPassword(String confirmPassword) {
+        WebElement confirmPasswordInput = zevtools.waitForElement(confirmPasswordInput_xpath, 15);
+        confirmPasswordInput.click();
+        zevtools.sleepSeconds(1);
+        confirmPasswordInput.sendKeys(confirmPassword);
+        zevtools.sleepSeconds(1);
     }
 }

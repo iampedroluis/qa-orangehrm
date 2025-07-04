@@ -27,6 +27,8 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 import static org.junit.Assert.assertEquals;
 
 import java.awt.Robot;
@@ -84,7 +86,7 @@ public class ZevTools {
     public WebDriver setupDriver() {
         if (this.driver == null) {
             try {
-                System.setProperty("webdriver.chrome.driver", "resources/chromedriver_V134/chromedriver.exe");
+                WebDriverManager.chromedriver().setup();
                 // Obtener el valor de la variable de sistema -Dheadless (true o false)
                 String headlessProperty = System.getProperty("headless", "false").trim().toLowerCase();
                 boolean headless = headlessProperty.equals("true");
