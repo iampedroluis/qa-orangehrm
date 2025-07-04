@@ -84,10 +84,9 @@ public class addUserSteps {
         pageAddUser.selectUserRole(userRole);
         zevTools.zevLogs("Seleccionando rol de usuario: " + userRole, "INFO");
         zevTools.sleepSeconds(1);
-       
 
-        
     }
+
     @And("The user selects {string} from the Employee Name dropdown")
     public void the_user_selects_john_doe_from_the_employee_name_dropdown(String employeeName) {
         // Select employee name from dropdown
@@ -97,6 +96,7 @@ public class addUserSteps {
         zevTools.screenshot(driver);
 
     }
+
     @And("The user selects {string} from the Status dropdown")
     public void the_user_selects_from_the_status_dropdown(String status) {
         zevTools.zevLogs(("Selecciona User status"), "INFO");
@@ -105,7 +105,36 @@ public class addUserSteps {
         zevTools.screenshot(driver);
         zevTools.zevLogs("Cerrando Driver", "INFO");
         zevTools.sleepSeconds(3);
-        zevTools.closeDriver(driver);
+
+    }
+
+    @And("The user enters {string} as the Username")
+    public void the_user_enters_in_the_username_input_field(String userName) {
+        // Enter username in input field
+        zevTools.zevLogs("Ingresando nombre de usuario: " + userName, "INFO");
+        pageAddUser.enterUserName(userName);
+        zevTools.sleepSeconds(1);
+        zevTools.screenshot(driver);
+
+    }
+
+    @And("The user enters {string} as the Password")
+    public void the_user_enters_in_the_password_input_field(String password) {
+        // Enter password in input field
+        zevTools.zevLogs("Ingresando contraseña: " + password, "INFO");
+        pageAddUser.enterPassword(password);
+        zevTools.sleepSeconds(1);
+        zevTools.screenshot(driver);
+
+    }
+
+    @And("The user enters {string} as the Confirm Password")
+    public void the_user_enters_in_the_confirm_password_input_field(String confirmPassword) {
+        // Enter confirm password in input field
+        zevTools.zevLogs("Ingresando confirmación de contraseña: " + confirmPassword, "INFO");
+        pageAddUser.enterConfirmPassword(confirmPassword);
+        zevTools.sleepSeconds(1);
+        zevTools.screenshot(driver);
 
     }
 }
