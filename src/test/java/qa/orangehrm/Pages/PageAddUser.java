@@ -23,7 +23,10 @@ public class PageAddUser {
     private By userNameInput_xpath = By.xpath("//label[text()='Username']/following::input[1]");
     private By passwordInput_xpath = By.xpath("//label[text()='Password']/following::input[1]");
     private By confirmPasswordInput_xpath = By.xpath("//label[text()='Confirm Password']/following::input[1]");
-    
+    private By saveButton_xpath = By.xpath("//button[@type='submit']");
+    private String userAdded_xpath = "//div[@role='table']//div[contains(text(), '%s')]";
+
+
 
     public PageAddUser(WebDriver driver) {
         this.driver = driver;
@@ -113,5 +116,17 @@ public class PageAddUser {
         zevtools.sleepSeconds(1);
         confirmPasswordInput.sendKeys(confirmPassword);
         zevtools.sleepSeconds(1);
+    }
+
+    public void clickSaveButton() {
+        WebElement saveButton = zevtools.waitForElement(saveButton_xpath, 15);
+        saveButton.click();
+        zevtools.sleepSeconds(1);
+        zevtools.screenshot(driver);
+    }
+    public boolean isUserAdded(String userName) {
+        String xpathFormater = String.format(userAdded_xpath, userName);
+        By userAddedLocator = By.xpath(xpathFormater);
+        return zevtools.isElementVisible(userAddedLocator, 15);
     }
 }

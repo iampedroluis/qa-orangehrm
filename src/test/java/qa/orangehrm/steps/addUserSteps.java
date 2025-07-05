@@ -137,4 +137,23 @@ public class addUserSteps {
         zevTools.screenshot(driver);
 
     }
+
+    @And("The user clicks on the Save button")
+    public void the_user_clicks_on_the_save_button() {
+        // Click on Save button
+        zevTools.zevLogs("Clickea en guardar", "INFO");
+        pageAddUser.clickSaveButton();
+        zevTools.sleepSeconds(1);
+        zevTools.screenshot(driver);
+    }
+
+    @Then("The new user {string} should be successfully added to the system")
+    public void verifyUserAddedSuccessfully(String userName) {
+        // Verify that the new user is successfully added
+        zevTools.zevLogs("Verificando si el usuario fue agregado correctamente", "INFO");
+        Assert.assertTrue("User Added Successfully", pageAddUser.isUserAdded(userName));
+        zevTools.sleepSeconds(1);
+        zevTools.screenshot(driver);
+        driver.quit();
+    }
 }

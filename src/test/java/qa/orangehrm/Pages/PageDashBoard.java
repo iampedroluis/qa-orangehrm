@@ -25,13 +25,9 @@ public class PageDashBoard {
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(15));
         this.zevtools = new ZevTools(driver);
     }
-
     public boolean isDashboardDisplayed() {
         return zevtools.isElementVisible(dashboardTitle, 15);
     }
-
-
-
     public void clickItemMenuAdmin() {
         try {
             zevtools.waitForElement(adminItemNav_xpath, 10);
